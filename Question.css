@@ -1,4 +1,8 @@
-.form {
+body{
+  background-image: url(stonehaven);
+}
+
+form {
     /* Just to center the form on the page */
     margin: 0 auto;
     width: 400px;
@@ -8,14 +12,15 @@
     border-radius: 1em;
   }
 
-  .toggle-box {
+toggle-box {
     width: 100%;
     padding: 50px 0;
     text-align: center;
     background-color: lightblue;
     margin-top: 20px;
   }
-  
-  .hide {
-    display: none;
- }
+
+ 
+d-none!:target {
+  display: block;
+}
