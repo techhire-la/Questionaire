@@ -38,13 +38,15 @@
                         <div class="form-check">
                             <label for="Children">Do you have any children?</label>
                             <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="children" id="children-yes" value="option1" href="box2">
+                                    <input class="form-check-input" type="radio" name="children" id="children-yes" value="option1"
+                                    data-toggle="collapse" data-target="#childrenBlock">
                                     <label class="form-check-label" for="children">
                                       Yes
                                 </label>
                             </div>
                             <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="children" id="children" value="option2">
+                                    <input class="form-check-input" type="radio" name="children" id="children" value="option2"
+                                    data-toggle="collapse" data-target="#childrenBlock" checked/>
                                     <label class="form-check-label" for="children">
                                       no
                                     </label>
@@ -53,7 +55,8 @@
                       </form>       
                     </div>
                                     <!-- Yes block children -->
-                                    <div class="col d-none" id="box2">
+                                  <div id="childrenBlock" class="panel-collapse collapse">  
+                                    <div class="col">
                                       <div class="row">
                                         <div class="form-check">
                                           <label class="form-check-label" for="how-manny-children">
@@ -138,6 +141,7 @@
                                     </div>
                         
                                 </div>
+                              </div>
                    <!-- Question two -->
                     <div class="row">
                             <form action="">
@@ -164,13 +168,15 @@
                                 <div class="form-check">
                                     <label for="Children">Are you facting Housing Hardships?</label>
                                     <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="housing" id="Housing" value="option1">
+                                            <input class="form-check-input" type="radio" name="housing" id="Housing_yes" value="option1"
+                                            data-toggle="collapse" data-target="#housingBlock">
                                             <label class="form-check-label" for="housing">
-                                                <a href="#block2">yes</a>
-                                        </label>
+                                              Yes
+                                            </label>
                                     </div>
                                     <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="housing" id="housing" value="option2">
+                                            <input class="form-check-input" type="radio" name="housing" id="housing" value="option2"
+                                            data-toggle="collapse" data-target="#housingBlock" checked>
                                             <label class="form-check-label" for="housing">
                                               No
                                             </label>
@@ -179,7 +185,8 @@
                             </form>
                             </div>
                             <!-- Question 3 Yes block2 -->
-                            <div class="col d-none" id="block2">
+                            <div class="panel-collapse collapse" id="housingBlock">
+                              <div class="col">
                               <div class="row">
                                 <div class="form-check">
                                     <label for="laid-off">
@@ -278,6 +285,7 @@
                                   </form>
                                 </div>
                             </div>
+                          </div>
                           <!--  question 4 -->
                             <div class="row">
                                     <form action="">
@@ -308,8 +316,9 @@
                                   </div>
                 
                                 </div>
-        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
 
