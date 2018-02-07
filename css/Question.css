@@ -1,10 +1,9 @@
-html { 
-  background: url(image-set(images/Background_ypi.jpeg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+/*body {
+  background-image: url(images/BackgroundYpi);
+  background-position: center center;
+  background-size: cover; 
+} 
+*/
 
 form {
     /* Just to center the form on the page */
@@ -15,16 +14,3 @@ form {
     border: 1px solid #CCC;
     border-radius: 1em;
   }
-
-toggle-box {
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    background-color: lightblue;
-    margin-top: 20px;
-  }
-
- 
-d-none!:target {
-  display: block;
-}
