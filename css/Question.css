@@ -1,20 +1,6 @@
-form {
-    /* Just to center the form on the page */
-    margin: 0 auto;
-    width: 400px;
-    /* To see the outline of the form */
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-  }
-  .bg { 
-    /* The image used */
-    background-image: url("images/bg.jpeg");
-
-    /* Full height */
+body {
+    background-image: url("../img/background.jpeg");
     height: 100%; 
-
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
