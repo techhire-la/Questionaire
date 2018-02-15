@@ -2,7 +2,7 @@
 <Program_contacts>
     <Program>
         <Name>Bridge To Coding</Name>
-        <Age>18 to 24</Age>
+        <Age>18 to 25</Age>
         <Group>High School, College, Career</Group>
         <Zip>90006</Zip>
         <PhoneNumbers>323.546.8071</PhoneNumbers>
@@ -10,7 +10,7 @@
     </Program>
      <Program>
         <Name>California Earned Income Tax Credit (CalEITC)</Name>
-        <Age>18 and over</Age>
+        <Age>18 to 25</Age>
         <Group>College, Career</Group>
         <Zip>ALL LA</Zip>
         <PhoneNumbers>(213) 673-5952</PhoneNumbers>
