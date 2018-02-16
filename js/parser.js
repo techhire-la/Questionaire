@@ -17,7 +17,9 @@ function loadXMLDoc() {
       table += "<tr><td>" +
       x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue +
       "</td><td>" +
-      x[i].getElementsByTagName("Number")[0].childNodes[0].nodeValue +
+      x[i].getElementsByTagName("PhoneNumber")[0].childNodes[0].nodeValue +
+      "</td></tr>"+
+      x[i].getElementsByTagName("Email")[0].childNodes[0].nodeValue +
       "</td></tr>";
     }
     document.getElementById("contacts").innerHTML = table;
