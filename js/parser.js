@@ -1,26 +1,19 @@
-function loadXMLDoc() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
-      }
-    };
-    xmlhttp.open("GET", "contacts.xml", true);
-    xmlhttp.send();
-  }
-  function myFunction(xml) {
-    var i;
-    var xmlDoc = xml.responseXML;
-    var table="<tr><th>name</th><th>Number</th></tr>";
-    var x = xmlDoc.getElementsByTagName("program_names");
-    for (i = 0; i <x.length; i++) { 
-      table += "<tr><td>" +
-      x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue +
-      "</td><td>" +
-      x[i].getElementsByTagName("PhoneNumber")[0].childNodes[0].nodeValue +
-      "</td></tr>"+
-      x[i].getElementsByTagName("Email")[0].childNodes[0].nodeValue +
-      "</td></tr>";
+$(document).ready(function(){
+    $("#resultstest").append("<ul></ul>");
+    $.ajax({
+      type: "GET",
+      url: "contacts.xml",
+      dataType: "xml",
+      success: function(xml){
+      $(xml).find('Program').each(function(){
+        var sName = $(this).find('Name').text();
+        var sPhoneNumber = $(this).find('PhoneNumber').text();
+        $("<li></li>").html(sName + ", " + sPhoneNumber).appendTo("#resultstest ul");
+      });
+    },
+    error: function() {
+      alert("An error occurred while processing XML file.");
     }
-    document.getElementById("contacts").innerHTML = table;
-  }
+    });
+  });
+  //Code Ends

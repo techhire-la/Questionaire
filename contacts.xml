@@ -121,7 +121,7 @@
         <Email>nwu@ypiusa.org</Email>
     </Program>
      <Program>
-        <Name>Gang Reduction & Youth Development (GRYD)</Name>
+        <Name>Gang Reduction &amp; Youth Development (GRYD)</Name>
         <Age>10 to 14</Age>
         <Group>Middle School, Families</Group>
         <Zip>90029, 90028</Zip>
@@ -129,7 +129,7 @@
         <Email>hfsc@ypiusa.org</Email>
     </Program>
      <Program>
-        <Name>Girls & Gangs</Name>
+        <Name>Girls &amp; Gangs</Name>
         <Age>14 to 65</Age>
         <Group>College, Women, Homeless, LGBTQIA, Parents</Group>
         <Zip>ALL LA</Zip>
@@ -264,22 +264,4 @@
         <PhoneNumbers>213.797.4858</PhoneNumbers>
         <Email>mhernandez@ypiusa.org</Email>
     </Program>
-    <Program>
-        <Name></Name>
-        <Age></Age>
-        <Group></Group>
-        <Zip></Zip>
-        <PhoneNumbers></PhoneNumbers>
-        <Email></Email>
-    </Program>
-    <Program>
-        <Name></Name>
-        <Age></Age>
-        <Group></Group>
-        <Zip></Zip>
-        <PhoneNumbers></PhoneNumbers>
-        <Email></Email>
-    </Program>
-
-
 </Program_contacts>
