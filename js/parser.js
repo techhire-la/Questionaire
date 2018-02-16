@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#resultstest").append("<ul></ul>");
+    $("#resultstest").append("<th></th>");
     $.ajax({
       type: "GET",
       url: "contacts.xml",
@@ -7,8 +7,9 @@ $(document).ready(function(){
       success: function(xml){
       $(xml).find('Program').each(function(){
         var sName = $(this).find('Name').text();
+        var sEmail = $(this).find('Email').text();
         var sPhoneNumber = $(this).find('PhoneNumber').text();
-        $("<li></li>").html(sName + ", " + sPhoneNumber).appendTo("#resultstest ul");
+        $("<tr></tr>").html(sName + ", " + sEmail + "," + sPhoneNumber).appendTo("#resultstest th");
       });
     },
     error: function() {
