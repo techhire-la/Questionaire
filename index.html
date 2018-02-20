@@ -21,295 +21,282 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="mx-auto mt-3 p-3 mb-2 bg-info text-white rounded">
-        <!-- question 1 -->
-        <div class="row">
-          <form>
-            <div class="form-check">
+        <form>
+          <!-- question 1 -->
+          <div class="row">
+            <div class="form-check" id="Children">
               <label for="Children">Do you have any children?</label>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="children" id="children-yes" value="True" data-toggle="collapse" data-target="#childrenBlock">
+                <input class="form-check-input" type="radio" name="children1" value="yes" data-toggle="collapse" data-target="#childrenBlock">
                 <label class="form-check-label" for="children">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="children" id="children" value="False" data-toggle="collapse" data-target="#childrenBlock"/>
+                <input class="form-check-input" type="radio" name="children2" value="No" data-toggle="collapse" data-target="#childrenBlock"
+                />
                 <label class="form-check-label" for="children">
                   No
                 </label>
               </div>
             </div>
-          </form>
-        </div>
-        <!-- Yes block children -->
-        <div id="childrenBlock" class="panel-collapse collapse">
-          <div class="col">
-            <div class="row">
-              <div class="form-check">
-                <label class="form-check-label" for="how-manny-children">
-                  Do you have children in the ages of?
-                </label>
-                <div class="form-check">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="how-manny-children" id="inlineRadio1" value="option1">
-                    <label class="form-check-label" for="inlinecheckbox1">0-1</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="how-manny-children" id="inlineRadio2" value="option2">
-                    <label class="form-check-label" for="inlinecheckbox2">1-3</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="how-manny-children" id="inlineRadio3" value="option3">
-                    <label class="form-check-label" for="inlinecheckbox3">4-5</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="how-manny-children" id="inlineRadio4" value="option4">
-                    <label class="form-check-label" for="inlinecheckbox4">5-10</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="how-manny-children" id="inlineRadio5" value="option5">
-                    <label class="form-check-label" for="inlinecheckbox">10-14</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="how-manny-children" id="inlineRadio6" value="option6">
-                    <label class="form-check-label" for="inlinecheckbox">14-18</label>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="how-manny-children" id="inlineRadio7" value="option7">
-                    <label class="form-check-label" for="inlinecheckbox">18-25</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-check">
-                <label for="working-age">
-                  Do you have children that are of working age, That are not currently working?
-                </label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="working-age" id="working-age" value="True">
-                  <label class="form-check-label" for="working-age">
-                    Yes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="working-age" id="working-age" value="False">
-                  <label class="for-check-label" for="working-age">
-                    No
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-check">
-                <label for="collage-age">
-                  Do you have children of college age, planning or going to college?
-                </label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="college-age" id="college-age" value="True">
-                  <label class="form-check-label" for="college-age">
-                    Yes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="college-age" id="college-age" value="False">
-                  <label class="for-check-label" for="college-age">
-                    No
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="form-check">
-                <label for="juvenile">
-                  Do you have any children involved in the Juvenile Justice System?
-                </label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="Juvenile" id="juvenile" value="True">
-                  <label class="form-check-label" for="juvenile">
-                    Yes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="juvenile" id="juvenile" value="False">
-                  <label class="for-check-label" for="juvenile">
-                    No
-                  </label>
-                </div>
-              </div>
-            </div>
-
           </div>
-        </div>
-        <!-- Question two -->
-        <div class="row">
-          <form action="">
-            <div class="form-check">
+          <!-- Yes block children -->
+          <div id="childrenBlock" class="panel-collapse collapse">
+            <div class="col">
+              <div class="row">
+                <div class="form-check">
+                  <label class="form-check-label" for="how-manny-children">
+                    Do you have children in the ages of?
+                  </label>
+                  <div class="form-check">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="how-manny-children1" id="inlineRadio1" value="">
+                      <label class="form-check-label" for="inlinecheckbox1">0-1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="how-manny-children2" id="inlineRadio2" value="">
+                      <label class="form-check-label" for="inlinecheckbox2">1-3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="how-manny-children3" id="inlineRadio3" value="">
+                      <label class="form-check-label" for="inlinecheckbox3">4-5</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="how-manny-children4" id="inlineRadio4" value="">
+                      <label class="form-check-label" for="inlinecheckbox4">5-10</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="how-manny-children5" id="inlineRadio5" value="">
+                      <label class="form-check-label" for="inlinecheckbox">10-14</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="how-manny-children6" id="inlineRadio6" value="">
+                      <label class="form-check-label" for="inlinecheckbox">14-18</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" name="how-manny-children7" id="inlineRadio7" value="">
+                      <label class="form-check-label" for="inlinecheckbox">18-25</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check" id="working-age">
+                  <label for="working-age">
+                    Do you have children that are of working age, That are not currently working?
+                  </label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="working-age1" value="yes">
+                    <label class="form-check-label" for="working-age1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="working-age2" value="no">
+                    <label class="for-check-label" for="working-age2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check" id="college-age">
+                  <label for="collage-age">
+                    Do you have children of college age, planning or going to college?
+                  </label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="college-age1" value="yes">
+                    <label class="form-check-label" for="college-age1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="college-age2" value="no">
+                    <label class="for-check-label" for="college-age2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-check" id="juvenile">
+                  <label for="juvenile">
+                    Do you have any children involved in the Juvenile Justice System?
+                  </label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="Juvenile1"  value="yes">
+                    <label class="form-check-label" for="juvenile1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="juvenile2"  value="no">
+                    <label class="for-check-label" for="juvenile2">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Question two -->
+          <div class="row">
+            <div class="form-check" id="working">
               <label for="working">Are You currently working?</label>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="working" id="working_yes" value="True" data-toggle="collapse" data-target="#JobBlock"
+                <input class="form-check-input" type="radio" name="working1"  value="yes" data-toggle="collapse" data-target="#JobBlock"
                   checked>
-                <label class="form-check-label" for="working">
+                <label class="form-check-label" for="working1">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="working" id="working_no" value="False" data-toggle="collapse" data-target="#JobBlock">
-                <label class="form-check-label" for="working">
+                <input class="form-check-input" type="radio" name="working2"  value="no" data-toggle="collapse" data-target="#JobBlock">
+                <label class="form-check-label" for="working2">
                   No
                 </label>
               </div>
             </div>
-          </form>
-        </div>
-        <!-- Question 2 Yes block2 -->
-        <div class="panel-collapse collapse" id="JobBlock">
-          <div class="col">
-            <div class="row">
-              <form action="">
-                <div class="form-check">
+          </div>
+          <!-- Question 2 Yes block2 -->
+          <div class="panel-collapse collapse" id="JobBlock">
+            <div class="col">
+              <div class="row">
+                <div class="form-check" id="education">
                   <label for="education">What is your hightest level of Education</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="education" id="education" value="option1">
+                    <input class="form-check-input" type="radio" name="education" value="">
                     <label class="form-check-label" for="working">
                       Highschool/GED
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="education" id="education" value="option2">
+                    <input class="form-check-input" type="radio" name="education" value="">
                     <label class="form-check-label" for="education">
                       Some college
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="education" id="education" value="option3">
+                    <input class="form-check-input" type="radio" name="education" value="">
                     <label class="form-check-label" for="education">
                       AA
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="education" id="education" value="option4">
+                    <input class="form-check-input" type="radio" name="education" id="education" value="">
                     <label class="form-check-label" for="education">
                       BA or higher
                     </label>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="row">
-              <form action="">
-                <div class="form-check">
+              </div>
+              <div class="row">
+                <div class="form-check" id="vet">
                   <label for="vet">Are you and/or someone in your family a veteran</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="vet" id="vet" value="option1">
-                    <label class="fomm-check-label" for="vet">
+                    <input class="form-check-input" type="radio" name="vet1" value="yes">
+                    <label class="fomm-check-label" for="vet1">
                       Yes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="vet" id="vet" value="option2">
-                    <label class="fomm-check-label" for="vet">
+                    <input class="form-check-input" type="radio" name="vet2" value="no">
+                    <label class="fomm-check-label" for="vet2">
                       No
                     </label>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="row">
-              <form>
-                <div class="form-check">
+              </div>
+              <div class="row">
+                <div class="form-check" id="training">
                   <label for="training">Are you interested in receiving Training?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="training" id="training" value="option1">
-                    <label class="form-check-label" for="training">
+                    <input class="form-check-input" type="radio" name="training1" value="yes">
+                    <label class="form-check-label" for="training1">
                       Yes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="training" id="training" value="option2">
-                    <label class="form-check-label" for="training">
+                    <input class="form-check-input" type="radio" name="training2" value="no">
+                    <label class="form-check-label" for="training2">
                       No
                     </label>
                   </div>
                 </div>
-              </form>
-            </div>
-            <div class="row">
-              <form>
-                <div class="form-check">
+              </div>
+              <div class="row">
+                <div class="form-check" id="other-jobless">
                   <label for="other-jobless">Is there anyone else in the household jobless?</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="other-jobless" id="other-jobless" value="option1">
-                    <label class="form-check-label" for="other-jobless">
+                    <input class="form-check-input" type="radio" name="other-jobless1" value="yes">
+                    <label class="form-check-label" for="other-jobless1">
                       Yes
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="other-jobless" id="other-jobless" value="option2">
-                    <label class="form-check-label" for="other-jobless">
+                    <input class="form-check-input" type="radio" name="other-jobless2" value="no">
+                    <label class="form-check-label" for="other-jobless2">
                       No
                     </label>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- question 3 -->
-        <div class="row">
-          <form action="" method="GET">
-            <div class="form-check">
+          <!-- question 3 -->
+          <div class="row">
+            <div class="form-check" id="housing">
               <label for="HousingHardships">Are you facting Housing Hardships?</label>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="housing" id="Housing_yes" value="True">
-                <label class="form-check-label" for="housing">
+                <input class="form-check-input" type="radio" name="housing1" value="yes">
+                <label class="form-check-label" for="housing1">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="housing" id="housing" value="False">
-                <label class="form-check-label" for="housing">
+                <input class="form-check-input" type="radio" name="housing2" value="no">
+                <label class="form-check-label" for="housing2">
                   No
                 </label>
               </div>
             </div>
-          </form>
-        </div>
-        <!--  question 4 -->
-        <div class="row">
-          <form action="">
-            <div class="form-check">
+          </div>
+          <!--  question 4 -->
+          <div class="row">
+            <div class="form-check" id="financial">
               <label for="Fincancing">Are you currently facing financial hardship?</label>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="financial" id="financial" value="option1">
-                <label class="form-check-label" for="financial">
+                <input class="form-check-input" type="radio" name="financial1" value="yes">
+                <label class="form-check-label" for="financial1">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="financial" id="financial" value="option2">
-                <label class="form-check-label" for="financial">
+                <input class="form-check-input" type="radio" name="financial2" value="no">
+                <label class="form-check-label" for="financial2">
                   No
                 </label>
               </div>
             </div>
-          </form>
-        </div>
-        <br>
-        <div class="form-row align-items-center">
-          <div class="input-group mb-2 mr-sm-2">
-            <div class="input-group-prepend">
-              <div class="input-group-text">Zipcode</div>
-            </div>
-            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="19246">
           </div>
-          <!-- submit & xml view -->
-          <a href="results.html">
-          <button class="btn btn-primary btn-outline-light col-auto my-1" type="button">
-            Search
-          </button>
-          </a>
-        </div>
+          <br>
+          <div class="form-row align-items-center">
+            <div class="input-group mb-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Zipcode</div>
+              </div>
+              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="19246">
+            </div>
+            <!-- submit & xml view -->
+            <a href="results.html">
+              <button class="btn btn-primary btn-outline-light col-auto my-1" type="button">
+                Search
+              </button>
+            </a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -323,6 +310,9 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="http://formbuilder.online/assets/js/form-builder.min.js"></script>
   <script src="/js/parser.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

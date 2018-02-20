@@ -18,3 +18,14 @@ $(document).ready(function(){
     });
   });
   //Code Ends
+  $('input').keyup(function() {                       // Bind keyup event to textbox
+    var textboxVal = $(this).val().toLowerCase();   // Get value of textbox
+    $('ul li').each(function() {                    // loop through the list
+        var listVal = $(this).text().toLowerCase(); // get value of the <li>
+        if(listVal.indexOf(textboxVal) >= 0) {      // search if textboxVal is in listVal
+            $(this).show();                         // if true show this <li>
+        } else {
+            $(this).hide();                         // else hide this <li>
+        }
+    });
+});
