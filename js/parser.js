@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#resultstest").append("<th></th>");
+    $("#resultstest").append("<tbody></tbody>");
     $.ajax({
       type: "GET",
       url: "contacts.xml",
@@ -9,7 +9,9 @@ $(document).ready(function(){
         var sName = $(this).find('Name').text();
         var sEmail = $(this).find('Email').text();
         var sPhoneNumber = $(this).find('PhoneNumber').text();
-        $("<tr></tr>").html(sName + ", " + sEmail + "," + sPhoneNumber).appendTo("#resultstest th");
+        $("<tr></tr>").html("Name: " + sName).appendTo("#resultstest tbody");
+        $("<tr></tr>").html("Email: " + sEmail).appendTo("#resultstest tbody");
+        $("<tr></tr>").html("Phone : " + sPhoneNumber).appendTo("#resultstest tbody");
       });
     },
     error: function() {
@@ -18,14 +20,3 @@ $(document).ready(function(){
     });
   });
   //Code Ends
-  $('input').keyup(function() {                       // Bind keyup event to textbox
-    var textboxVal = $(this).val().toLowerCase();   // Get value of textbox
-    $('ul li').each(function() {                    // loop through the list
-        var listVal = $(this).text().toLowerCase(); // get value of the <li>
-        if(listVal.indexOf(textboxVal) >= 0) {      // search if textboxVal is in listVal
-            $(this).show();                         // if true show this <li>
-        } else {
-            $(this).hide();                         // else hide this <li>
-        }
-    });
-});
