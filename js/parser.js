@@ -8,10 +8,10 @@ $(document).ready(function(){
       $(xml).find('Program').each(function(){
         var sName = $(this).find('Name').text();
         var sEmail = $(this).find('Email').text();
-        var sPhoneNumber = $(this).find('PhoneNumber').text();
-        $("<th></th>").html(sName).appendTo("#resultstest tbody");
-        $("<tr></tr>").html("Email: " + sEmail).appendTo("#resultstest tbody");
-        $("<tr></tr>").html("Phone : " + sPhoneNumber).appendTo("#resultstest tbody");
+        var sPhoneNumber = $(this.childNodes).closest('phonenumbers');
+        $("<th></th>").html( "<input type='checkbox' value=/>" + sName).appendTo("#resultstest tbody");
+        $("<tr></tr>").html("Email: " + "<a href ='mailto:"+ sEmail +"'>"+sEmail+"</a>").appendTo("#resultstest tbody");
+        $("<tr></tr>").html("Phone : " + sPhoneNumber[0].innerHTML).appendTo("#resultstest tbody");
       });
     },
     error: function() {
