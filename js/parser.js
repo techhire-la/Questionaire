@@ -6,7 +6,7 @@ $(document).ready(function(){
       dataType: 'json',
       success: function(data){
       $(data.contacts).each(function(index, value){
-        console.log(data)
+        console.log(data);
         //var sName = $(this).find('Name').text();
         //var sEmail = $(this).find('Email').text();
         //var sPhoneNumber = $(this).find('phonenumbers').text();
