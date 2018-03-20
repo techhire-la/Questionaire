@@ -27,12 +27,12 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="mx-auto mt-3 p-3 mb-2 bg-info text-white rounded">
-                <div class="col form-check">
+                <!-- <div class="col form-check">
                     <div class="d-flex flex-row-reverse form-inline">
-                        
+
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                    </div>
+                    </div> -->
                     <form id="email" method="POST">
                         <div id="resultstest">
                             <table class="table table-hover table-dark table-responsive" id="#message">
@@ -41,6 +41,9 @@
                             </table>
                         </div>
                         <div class="col">
+                            <div class="form-row">
+                                <div id="log"></div>
+                            </div>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <input type="text" class="form-control" placeholder="First name" name="firstname">
@@ -58,13 +61,14 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
-                    <div id="log"></div>
-                    <div class="form-row">
-                        <div class="col-auto flex-row-reverse" id="#contactbutton">
-                            <button type="submit" class="btn btn-outline-light">Email List</button>
+
+                        <div id="log"></div>
+                        <div class="form-row">
+                            <div class="col-auto flex-row-reverse" id="#contactbutton">
+                                <button type="submit" class="btn btn-outline-light">Email List</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -72,7 +76,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/js/parser.js" type="text/javascript"></script>
+    <script src="/js/catalog.js" type="text/javascript"></script>
     <script src="/js/mailer.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

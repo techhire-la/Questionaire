@@ -1,30 +1,29 @@
-$(document).ready(function(){
-    $("#resultstest").clone("<tbody></tbody>");
-    $.ajax({
-      type: "GET",
-      url: "js/contacts.json",
-      dataType: "json",
-      cashe: false,
-      success: function(data){
-      $(data.contacts).each(function(index, value){
-        console.log(contacts.value);
-        $("<th></th>").html( "<input type='checkbox' value=/>" + value.name).appendTo("#resultstest tbody");
-        $("<tr></tr>").html("Email: " + "<a href ='mailto:"+ value.email +"'>"+value.email+"</a>").appendTo("#resultstest tbody");
-        $("<tr></tr>").html("Phone : " + value.phonenumber).appendTo("#resultstest tbody");
+$( "input:checked" ).on( "click", countChecked );
+
+$(document).ready(function () {
+  $("#resultstest").clone("<tbody></tbody>");
+  $.ajax({
+    type: "GET",
+    url: "js/contacts.json",
+    dataType: "json",
+    cashe: false,
+    success: function (data) {
+      $(data.contacts).each(function (index, value) {
+        $("<th></th>").html(value.name).appendTo("#resultstest tbody");
+        $("<tr></tr>").html("<input type='checkbox' value='" + value.email + "'> " + "  Email: " + "<a href ='mailto:" + value.email + "' name='emailto' id=" + index + ">" + value.email + "</a>").appendTo("#resultstest tbody");
+        $("<tr></tr>").html("  Phone : " + value.phonenumber).appendTo("#resultstest tbody");
       });
     },
 
-    error: function() {
+    error: function () {
       alert("An error occurred while processing json file.");
     }
-    });
   });
-  //Code Ends
+});
 
-  for(var i = 0; i < contacts.length; i++)
-{
-  if(contacts[i].index.group == 'chicken')
-  {
-    return restaurants[i].restaurant.name;
-  }
-}
+var countChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( "#log" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
+};
+countChecked();
+ 
