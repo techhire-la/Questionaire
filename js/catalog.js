@@ -20,3 +20,11 @@ $(document).ready(function(){
     });
   });
   //Code Ends
+
+  for(var i = 0; i < contacts.length; i++)
+{
+  if(contacts[i].index.group == 'chicken')
+  {
+    return restaurants[i].restaurant.name;
+  }
+}

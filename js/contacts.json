@@ -35,7 +35,7 @@
             "name": "College and Career LAPN",
             "age": "14 to 24",
             "group": ["College", "Career"],
-            "zip": "91331, 90028",
+            "zip": [91331, 90028],
             "phonenumber": "818.899.5550",
             "email": "cperez@ypiusa.org"
         },
@@ -123,6 +123,7 @@
             "age": "10 to 14",
             "group": ["Middle School", "Families"],
             "zip": [90029, 90028],
+            "phonenumber": "323.836.0055",
             "email": "hfsc@ypiusa.org"
         },
         {
@@ -234,7 +235,8 @@
             "age": "18 to 65",
             "group": ["College", "Career", "Businesses", "Homeless", "Disabled", "Veterans"],
             "zip": [""],
-            "phonenumber": "818.492.4065"
+            "phonenumber": "818.492.4065",
+            "email": ""
         },
         {
             "name": "YouthBuild (YB)",
