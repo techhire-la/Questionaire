@@ -1,3 +1,5 @@
+var checkedValue = $('.messageCheckbox:checked').val();
+
 $("#myForm").on("submit", function(event) {
   event.preventDefault(); // prevent reload
   
