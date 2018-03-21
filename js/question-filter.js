@@ -1,10 +1,8 @@
-
-
-/* var group = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
-
-var result = contacts.group.filter( function(word) { 
-  return word == "high school";
+$(document).ready(function(){
+  $("#hide-chil").click(function(){
+      $("#chil-block").hide();
+  });
+  $("#show-chil").click(function(){
+      $("#chil-block").show();
+  });
 });
-
-console.log(result);
-*/

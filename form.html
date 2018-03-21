@@ -145,13 +145,13 @@
             <div class="form-check" id="working">
               <label for="working">Are You currently working?</label>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="working" value="yes" >
+                <input class="form-check-input" type="radio" name="working" value="yes" id="show-chil">
                 <label class="form-check-label" for="working">
                   Yes
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="working" value="no" data-toggle="collapse" data-target="#JobBlock">
+                <input class="form-check-input" type="radio" name="working" value="no" id="hide-chil">
                 <label class="form-check-label" for="working">
                   No
                 </label>
@@ -159,7 +159,7 @@
             </div>
           </div>
           <!-- Question 2 Yes block2 -->
-          <div class="panel-collapse collapse" id="JobBlock">
+          <div class="panel-collapse collapse" id="JobBlock chil-block">
             <div class="col">
               <div class="row">
                 <div class="form-check" id="education">
@@ -287,7 +287,7 @@
               </div>
               <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="19246">
             </div>
-            <!-- submit & xml view -->
+            <!-- submit & results view -->
             <a href="results.html">
               <button class="btn btn-primary btn-outline-light col-auto my-1" type="button">
                 Search
@@ -299,12 +299,7 @@
     </div>
   </div>
 
-  </div>
-  </div>
-  </div>
 
-  </div>
-  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

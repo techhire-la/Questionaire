@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   $("#resultstest").clone("<tbody></tbody>");
   $.ajax({
@@ -6,13 +7,7 @@ $(document).ready(function () {
     dataType: "json",
     cashe: false,
     success: function (data) {
-      //debugger;
-      var filterContacts = data.contacts.filter(function (contact) {
-        //return contact.phonenumber === "323.546.8071";
-        return contact.zip.includes(90038);
-      });
-      console.dir(filterContacts);
-      $(filterContacts).each(function (index, value) {
+      $(data.contacts).each(function (index, value) {
         $("<th></th>").html(value.name).appendTo("#resultstest tbody");
         $("<tr></tr>").html("<input type='checkbox' value='" + value.email + "'> " + "  Email: " + "<a href ='mailto:" + value.email + "' name='emailto' id=" + index + ">" + value.email + "</a>").appendTo("#resultstest tbody");
         $("<tr></tr>").html("  Phone : " + value.phonenumber).appendTo("#resultstest tbody");
@@ -34,6 +29,3 @@ $("#email").submit(function (event) {
   document.getElementById("emaillist").value = searchIDs;
   //$("#emaillist").value= searchIDs;
 });
-
-
-
