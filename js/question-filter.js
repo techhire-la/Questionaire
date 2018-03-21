@@ -1,17 +1,10 @@
-$(function() {
-    
-    $('.panel-button').on('click', function(){
-        var panelId = $(this).attr('data-questionid');
-        $('#'+panelId).toggle();
-    });
 
+
+/* var group = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+var result = contacts.group.filter( function(word) { 
+  return word == "high school";
 });
 
-$(document).ready(function(){
-    $("#hide").click(function(){
-        $("#childrenBlock").hide();
-    });
-    $("#show").click(function(){
-        $("#childrenBlock").show();
-    });
-});
+console.log(result);
+*/

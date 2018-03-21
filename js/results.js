@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   $("#resultstest").clone("<tbody></tbody>");
   $.ajax({

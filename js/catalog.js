@@ -1,5 +1,3 @@
-$( "input:checked" ).on( "click", countChecked );
-
 $(document).ready(function () {
   $("#resultstest").clone("<tbody></tbody>");
   $.ajax({
@@ -8,7 +6,13 @@ $(document).ready(function () {
     dataType: "json",
     cashe: false,
     success: function (data) {
-      $(data.contacts).each(function (index, value) {
+      //debugger;
+      var filterContacts = data.contacts.filter(function (contact) {
+        //return contact.phonenumber === "323.546.8071";
+        return contact.zip.includes(90038);
+      });
+      console.dir(filterContacts);
+      $(filterContacts).each(function (index, value) {
         $("<th></th>").html(value.name).appendTo("#resultstest tbody");
         $("<tr></tr>").html("<input type='checkbox' value='" + value.email + "'> " + "  Email: " + "<a href ='mailto:" + value.email + "' name='emailto' id=" + index + ">" + value.email + "</a>").appendTo("#resultstest tbody");
         $("<tr></tr>").html("  Phone : " + value.phonenumber).appendTo("#resultstest tbody");
@@ -21,9 +25,15 @@ $(document).ready(function () {
   });
 });
 
-var countChecked = function() {
-  var n = $( "input:checked" ).length;
-  $( "#log" ).text( n + (n === 1 ? " is" : " are") + " checked!" );
-};
-countChecked();
- 
+$("#email").submit(function (event) {
+  event.preventDefault();
+  var searchIDs = $("input[type='checkbox']:checked").map(function () {
+    return $(this).val();
+  }).get(); // <----
+  console.log(searchIDs);
+  document.getElementById("emaillist").value = searchIDs;
+  //$("#emaillist").value= searchIDs;
+});
+
+
+
