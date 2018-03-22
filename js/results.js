@@ -11,7 +11,7 @@ $(document).ready(function () {
         if ($('input[name=college-age]:checked').val() == "yes") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("College");
-          })
+          });
         }
       });
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
         if ($('input[name=education]:checked').val() == "True") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("High School");
-          })
+          });
         }
       });
 
@@ -27,14 +27,14 @@ $(document).ready(function () {
         if ($('input[name=vet]:checked').val() == "yes") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("Veterans");
-          })
+          });
         }
       });
       $("input[name=housing]:radio").click(function () {
         if ($('input[name=housing]:checked').val() == "yes") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("Homelessness");
-          })
+          });
         }
       });
 
