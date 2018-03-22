@@ -1,3 +1,4 @@
+//$("#button").load("results.html");
 $(document).ready(function () {
   $("#resultstest").clone("<tbody></tbody>");
   $.ajax({
@@ -7,7 +8,8 @@ $(document).ready(function () {
     cashe: false,
     success: function (data) {
       //debugger;
-      $("input[name=college-age]:radio").click(function () {
+
+         $("input[name=college-age]:radio").click(function () {
         if ($('input[name=college-age]:checked').val() == "yes") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("College");
@@ -55,15 +57,4 @@ $(document).ready(function () {
       alert("An error occurred while processing json file.");
     }
   });
-});
-
-
-$("#email").submit(function (event) {
-  event.preventDefault();
-  var searchIDs = $("input[type='checkbox']:checked").map(function () {
-    return $(this).val();
-  }).get(); // <----
-  console.log(searchIDs);
-  document.getElementById("emaillist").value = searchIDs;
-  //$("#emaillist").value= searchIDs;
 });
