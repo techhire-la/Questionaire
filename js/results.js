@@ -8,7 +8,7 @@ $(document).ready(function () {
     success: function (data) {
       //debugger;
       $("input[name=college-age]:radio").click(function () {
-        while ($('input[name=college-age]:checked').val() == "yes") {
+        if ($('input[name=college-age]:checked').val() == "yes") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("College");
           })
@@ -16,7 +16,7 @@ $(document).ready(function () {
       });
 
       $("input[name=education]:radio").click(function () {
-        while ($('input[name=education]:checked').val() == "True") {
+        if ($('input[name=education]:checked').val() == "True") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("High School");
           })
@@ -24,14 +24,14 @@ $(document).ready(function () {
       });
 
       $("input[name=vet]:radio").click(function () {
-        while ($('input[name=vet]:checked').val() == "yes") {
+        if ($('input[name=vet]:checked').val() == "yes") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("Veterans");
           })
         }
       });
       $("input[name=housing]:radio").click(function () {
-        while ($('input[name=housing]:checked').val() == "yes") {
+        if ($('input[name=housing]:checked').val() == "yes") {
           var filterContacts = data.contacts.filter(function (contact) {
             return contact.group.includes("Homelessness");
           })
