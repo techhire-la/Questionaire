@@ -7,11 +7,42 @@ $(document).ready(function () {
     cashe: false,
     success: function (data) {
       //debugger;
-      var filterContacts = data.contacts.filter(function (contact) {
-        return contact.group.includes("High School");
-        //return contact.phonenumber === "323.546.8071";
-        //return contact.zip.includes(90038);
+      $("input[name=college-age]:radio").click(function () {
+        while ($('input[name=college-age]:checked').val() == "yes") {
+          var filterContacts = data.contacts.filter(function (contact) {
+            return contact.group.includes("College");
+          })
+        }
       });
+
+      $("input[name=education]:radio").click(function () {
+        while ($('input[name=education]:checked').val() == "True") {
+          var filterContacts = data.contacts.filter(function (contact) {
+            return contact.group.includes("High School");
+          })
+        }
+      });
+
+      $("input[name=vet]:radio").click(function () {
+        while ($('input[name=vet]:checked').val() == "yes") {
+          var filterContacts = data.contacts.filter(function (contact) {
+            return contact.group.includes("Veterans");
+          })
+        }
+      });
+      $("input[name=housing]:radio").click(function () {
+        while ($('input[name=housing]:checked').val() == "yes") {
+          var filterContacts = data.contacts.filter(function (contact) {
+            return contact.group.includes("Homelessness");
+          })
+        }
+      });
+
+      //var filterContacts = data.contacts.filter(function (contact) {
+      // return contact.group.includes("Middle School");
+      //return contact.phonenumber === "323.546.8071";
+      //return contact.zip.includes(90038);
+      //});
       console.dir(filterContacts);
       $(filterContacts).each(function (index, value) {
         $("<th></th>").html(value.name).appendTo("#resultstest tbody");
@@ -26,6 +57,7 @@ $(document).ready(function () {
   });
 });
 
+
 $("#email").submit(function (event) {
   event.preventDefault();
   var searchIDs = $("input[type='checkbox']:checked").map(function () {
@@ -35,6 +67,3 @@ $("#email").submit(function (event) {
   document.getElementById("emaillist").value = searchIDs;
   //$("#emaillist").value= searchIDs;
 });
-
-
-

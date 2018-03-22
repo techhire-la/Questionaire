@@ -1,8 +1,3 @@
-$(document).ready(function(){
-  $("#hide-chil").click(function(){
-      $("#chil-block").hide();
-  });
-  $("#show-chil").click(function(){
-      $("#chil-block").show();
-  });
-});
+$('#myCollapse').on('shown.bs.collapse', function (e) {
+    // Action to execute once the collapsible area is expanded
+  })

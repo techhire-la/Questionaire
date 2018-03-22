@@ -33,7 +33,7 @@
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="children" value="No" id="hide" />
+                <input class="form-check-input" type="radio" name="children" value="No" id="hide" data-toggle="collapse" data-target="#childrenBlock"/>
                 <label class="form-check-label" for="children">
                   No
                 </label>
@@ -41,7 +41,7 @@
             </div>
           </div>
           <!-- Yes block children -->
-          <div id="childrenBlock" class="panel-collapse collapse">
+          <div id="childrenBlock" class="collapse">
             <div class="col">
               <div class="row">
                 <div class="form-check">
@@ -151,7 +151,7 @@
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="working" value="no" id="hide-chil">
+                <input class="form-check-input" type="radio" name="working" value="no" id="hide-chil" data-toggle="collapse" data-target="#JobBlock">
                 <label class="form-check-label" for="working">
                   No
                 </label>
@@ -159,13 +159,13 @@
             </div>
           </div>
           <!-- Question 2 Yes block2 -->
-          <div class="panel-collapse collapse" id="JobBlock chil-block">
+          <div class="panel-collapse collapse" id="JobBlock">
             <div class="col">
               <div class="row">
                 <div class="form-check" id="education">
                   <label for="education">What is your hightest level of Education</label>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="education" value="">
+                    <input class="form-check-input" type="radio" name="education" value="True">
                     <label class="form-check-label" for="working">
                       Highschool/GED
                     </label>
@@ -303,6 +303,7 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/js/results.js" type="text/javascripts"></script>
   <script src="/js/jquery-3.3.1.js" type="text/javascript"></script>
   <script src="/js/question-filter.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
